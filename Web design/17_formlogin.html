@@ -1,0 +1,70 @@
+<!doctype html>
+<!-- Doctype informa ao agente do usuário a versão do html que deve ser renderizada, no caso a ultima versão html existente -->
+<html>
+    <head>
+        <title>Login with CSS</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Alex">
+        <meta name="description" content="estrutura básica">
+        <meta name="keywords" ccontent="html5, css, js, tecnologia, ti">
+
+        <style>
+        
+            .formLogin {
+                width: 250px;
+                margin: 50px auto 0;
+                font-family: sans-serif;
+            }
+
+            .formLogin fieldset {
+                background-color: lightgray;
+            }
+
+            .formLogin label {
+                display: block;
+                margin-top: 20px;
+            }
+
+            #user, #password, .btn {
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+                padding: 10px;
+                font-size: 18px;
+                border: none;
+            }
+
+            .btn {
+                margin-top: 20px;
+                letter-spacing: 1.5px;
+                font-size: 20px;
+            }
+
+            #user {
+                margin-bottom: 15px;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <h1>System login</h1>
+
+        <form action="#" method="POST" class="formLogin">
+
+            <fieldset>
+                <legend>Login</legend>
+
+                <label for="user">Informe seu usuário:</label>
+                <input type="text" name="user" id="user" autofocus>
+
+                <label for="password">Informe sua senha:</label>
+                <input type="password" name="password" id="password">
+
+                <input type="submit" value="Logar" class="btn">
+            </fieldset>
+
+        </form>
+
+    </body>
+</html>

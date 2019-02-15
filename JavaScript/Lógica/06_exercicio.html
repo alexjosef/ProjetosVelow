@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Lógica de Programação</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <h1>Lógica de Programação com JavaScript</h1>
+
+    <script>
+
+        var n1 = prompt("Informe sua primeira nota: ")
+        n1 = parseFloat(n1)
+
+         var n2 = prompt("Informe sua segunda nota: ")
+         n2 = parseFloat(n2)
+
+        var media = (n1 + n2) / 2
+
+         if(media < 6 || n1 === 0 || n2 === 0) {
+            alert("Você esta reprovado, média: " + media)            
+         } else {
+            alert("Sua média foi " + media + ", você está aprovado!")
+         }
+
+    </script>
+</body>
+
+</html>

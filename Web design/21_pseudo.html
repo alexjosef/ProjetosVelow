@@ -1,0 +1,80 @@
+<!doctype html>
+<!-- Doctype informa ao agente do usuário a versão do html que deve ser renderizada, no caso a ultima versão html existente -->
+<html>
+    <head>
+        <title>Exemplo Estrutura Básica</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Alex">
+        <meta name="description" content="estrutura básica">
+        <meta name="keywords" ccontent="html5, css, js, tecnologia, ti">
+
+        <style>
+        
+            input[type="checkbox"] {
+                width: 100px;
+                height: 100px;
+            }
+            
+            input[type="checkbox"]:checked {
+                width: 25px;
+                height: 25px;
+            }
+
+            button:disabled {
+                background: blue;
+            }
+
+            p {
+                color: red;
+            }
+
+            p:empty::before {
+                content: "Paragráfo vazio não da, né!"
+            }
+
+            input[type="text"]:focus {
+                background: #ccc;
+            }
+
+            a:focus, a:hover {
+                background: red;
+            }
+
+            input::placeholder {
+                color: red;
+            }
+
+            input:read-only {
+                background: yellow;
+            }
+
+        </style>
+
+    </head>
+    <body>
+
+        <label><input type="checkbox" value="Sim">Aceito o contrato.</label>
+
+        <button>Vai</button>
+        <button disabled>Volta</button>
+
+        <p>Paragráfo 1</p>
+        <p> </p>
+        <p></p>
+        <hr>
+
+        <input type="text">
+        <input type="text" value="valor inicial">
+        <input type="text" value="valor inicial" readonly>
+        <input type="text" value="valor inicial" disabled>
+        <input type="text" placeholder="valor do placeholder"> 
+        
+
+        <ul>
+            <li><a href="#">Link falso</a></li>
+            <li><a href="#">Link falso</a></li>
+            <li><a href="#">Link falso</a></li>
+        </ul>
+
+    </body>
+</html>

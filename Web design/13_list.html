@@ -1,0 +1,67 @@
+<!doctype html>
+<!-- Doctype informa ao agente do usuário a versão do html que deve ser renderizada, no caso a ultima versão html existente -->
+<html>
+    <head>
+        <title>Exemplo Estrutura Básica</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Alex">
+        <meta name="description" content="estrutura básica">
+        <meta name="keywords" ccontent="html5, css, js, tecnologia, ti">
+
+        <style>
+        
+            li ul {
+                height: 0;
+                overflow: hidden;
+                transition: height 0.5s;
+            } 
+            
+            li:hover {
+                background-color:lightgray;
+            }
+
+            li:hover ul {
+                height: 50px;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        
+        <ul>
+            <li>1</li>
+            <li>2
+                <ul>
+                    <li>1.1</li>
+                    <li>1.2</li>
+                </ul>
+            </li>
+            <li>3</li>
+        </ul>
+
+        <hr>
+
+        <dl>
+            <dt>Term</dt>
+            <dd>Description</dd>
+        </dl>
+
+        <hr>
+
+        <dl>
+            <dt>Term1</dt>
+            <dt>Term2</dt>
+            <dd>Description</dd>
+        </dl>
+
+        <hr>
+
+        <dl>
+            <dt>Term</dt>
+            <dd>Description</dd>
+            <dd>Description</dd>
+        </dl>
+
+    </body>
+</html>

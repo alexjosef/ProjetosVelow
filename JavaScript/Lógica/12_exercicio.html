@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Lógica de Programação</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Lógica de Programação com JavaScript</h1>
+
+        <button onclick="iniciarCalculo('+')">+</button>
+        <button onclick="iniciarCalculo('-')">-</button>
+        <button onclick="iniciarCalculo('*')">*</button>
+        <button onclick="iniciarCalculo('/')">/</button>
+        
+        <div id="output"></div>
+
+        <script>
+
+            var n2 = prompt("Informe um número: ")
+            n2 = parseFloat(n2)
+
+            escreve(n2)
+
+            function iniciarCalculo(simbolo) {
+                var n1 = document.querySelector("#output").textContent
+                n1 = parseFloat(n1)
+
+                var n2 = prompt("Informe outro número: ")
+                n2 = parseFloat(n2)
+
+                try {
+                    var msg = calcular(simbolo, n1, n2)
+                } catch (e) {
+                    alert(e)
+                    return
+                }
+                
+                escreve(msg)
+            }
+
+            function escreve(mensagem) {
+                var output = document.querySelector("#output")
+                output.innerHTML = mensagem
+            }
+        
+            function calcular(simbolo, n1, n2) {
+
+                if (simbolo !== "+" && simbolo !== "-" && simbolo !== "*" && simbolo !== "/") {
+                    throw new Error("Informe um simbolo válido.")
+                }
+
+                if (isNaN(n1) || isNaN(n2)) {
+                    throw new Error("Informe somente números.")                    
+                }
+
+                var numeroCalculado = null
+                
+                switch (simbolo) {
+                    case '+':
+                        numeroCalculado = n1 + n2
+                        break;
+                    
+                    case '-':
+                        numeroCalculado = n1 - n2
+                        break;
+
+                    case '*':
+                        numeroCalculado = n1 * n2
+                        break;
+                
+                    case '/':
+                        numeroCalculado = n1 / n2
+                }
+
+                return numeroCalculado
+            }
+        </script>
+    </body>
+</html>

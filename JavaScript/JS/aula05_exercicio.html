@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Curso JavaScript</title>
+    <meta charset="utf-8">
+
+    <script>
+
+        (function () {
+            'use strict';
+            function CalcularMedia() {
+                console.log(arguments);
+                
+                var media = 0;
+
+                for (var i = 0; i < arguments[i]; i++) {
+                    media += arguments[i];
+                }
+                media /= arguments.length;
+
+                console.log("Sua média é: " + media)
+            }
+
+            CalcularMedia(2, 4)
+        })();
+
+
+    </script>
+
+</head>
+
+<body>
+    <h1>Curso JavaScript completo</h1>
+</body>
+
+</html>

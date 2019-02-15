@@ -1,0 +1,93 @@
+<!doctype html>
+<!-- Doctype informa ao agente do usuário a versão do html que deve ser renderizada, no caso a ultima versão html existente -->
+<html>
+    <head>
+        <title>Exemplo Estrutura Básica</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Alex">
+        <meta name="description" content="estrutura básica">
+        <meta name="keywords" ccontent="html5, css, js, tecnologia, ti">
+
+        <style>
+        
+            .grid-container {
+                width: 300px;
+                background: #ccc;
+            }
+
+            .grid-item {
+                background: #999;
+                font-size: 2em;
+                font-family: sans-serif;
+                padding: 5px 15px;
+            }
+
+            .grid-item:nth-child(even) {
+                background: #999;
+                color: white;
+            }
+
+            .grid-item:nth-child(odd) {
+                background: #eee;
+            }
+            
+            /* GRID */
+            
+            .grid-container {
+                display: grid;
+                
+                /*
+                grid-template-columns: 100px 100px 100px;
+                grid-template-rows: 100px 100px;
+                */
+
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(3, 100px);
+
+                /* 
+                grid-row-gap: 10px;
+                grid-column-gap: 10px; 
+                */
+
+                grid-gap: 10px 10px;
+            }
+
+            .grid-item:nth-child(1) {
+                background: red;
+
+                /*
+                grid-row-start: 1;
+                grid-row-end: 2;
+                grid-column-start: 3;
+                grid-column-end: 4;
+                */
+
+                grid-row: 1 / 2;
+                grid-column: 2 / -1;
+            }
+
+            .grid-item:nth-child(2) {
+                grid-row: 1 / span 2;
+            }
+
+            .grid-item:nth-child(6) {
+                grid-column: 1 / -1;
+            }
+
+
+        </style>
+
+    </head>
+    <body>
+        <h2>Grid Layout</h2>
+
+        <div class="grid-container">
+            <div class="grid-item">1</div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div>
+            <div class="grid-item">4</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">6</div>
+        </div>
+    </body>
+</html>

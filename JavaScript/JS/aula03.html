@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Curso JavaScript</title>
+    <meta charset="utf-8">
+
+    <script>
+
+
+
+    </script>
+
+</head>
+
+<body>
+    <h1>Curso JavaScript completo</h1>
+
+    <button onclick="calcular('+')">+</button>
+    <button onclick="calcular('-')">-</button>
+    <button onclick="calcular('*')">*</button>
+    <button onclick="calcular('/')">/</button>
+
+    <div id="output"></div>
+
+    <script>
+
+        var msg = ""
+
+        var n1 = prompt("Digite um número: ");
+        n1 = parseFloat(n1);
+
+        escreve();
+
+        function escreve() {
+            console.log("-------")
+            console.log(n1)
+        }
+
+        function calcular(simbolo) {
+            var n2 = prompt("Informe outro número: ")
+            n2 = parseFloat(n2)
+
+            switch (simbolo) {
+                case '+':
+                    n1 += n2
+                    break;
+
+                case '-':
+                    n1 -= n2
+                    break;
+
+                case '*':
+                    n1 *= n2
+                    break;
+
+                case '/':
+                    n1 /= n2
+            }
+
+            escreve()
+        }
+
+    </script>
+
+</body>
+
+</html>

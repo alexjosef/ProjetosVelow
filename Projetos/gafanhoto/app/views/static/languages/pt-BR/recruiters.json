@@ -1,0 +1,40 @@
+{
+    "recruiters": {
+        "name": {
+            "one": "Recrutador",
+            "other": "Recrutadores"
+        },
+        "list": {
+            "not_found": {
+                "message": "Não existem recrutadores cadastrados",
+                "message_filters": "Recrutadores não encontrados",
+                "tip": "Cadastre um recrutador e ele aparecerá aqui.",
+                "tip_filters": "Redefina seus filtros e tente novamente."
+            }
+        },
+        "data_table": {
+            "columns": {
+                "descripton": "Nome",
+                "street": "Rua",
+                "number": "Número",
+                "phone": "Telefone"
+            }
+        },
+        "filters": {},
+        "tabs": {
+            "general": "Dados cadastrais"
+        },
+        "params": {
+            "descripton": "Nome",
+            "street": "Rua",
+            "number": "Número",
+            "phone": "Telefone"
+        },
+        "enumerations": {
+            "status": {
+                "1": "Ativos",
+                "2": "Inativos"
+            }
+        }
+    }
+}

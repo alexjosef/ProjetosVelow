@@ -1,0 +1,63 @@
+<!doctype html>
+<!-- Doctype informa ao agente do usuário a versão do html que deve ser renderizada, no caso a ultima versão html existente -->
+<html>
+    <head>
+        <title>Exemplo Estrutura Básica</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Alex">
+        <meta name="description" content="estrutura básica">
+        <meta name="keywords" ccontent="html5, css, js, tecnologia, ti">
+
+        <style>
+
+            div {
+                border: 2px solid black;
+                padding: 25px;
+                position: relative;
+                margin: 25px;
+            }
+
+            div:before {
+                content: "before: ";
+                background: #ccc;
+            }
+
+            div:after {
+                content: "";
+                background: black;
+                width: 25px;
+                height: 25px;
+                display: inline-block;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+
+        </style>
+
+    </head>
+    <body>
+
+        <div>Texto principal da div</div>
+
+        <article>
+            <h3>
+                Titulo
+            </h3>
+
+            <p>Paragráfo <a href="#">Apnas um link com <b>negrito</b>.</a></p>
+            <p>Paragráfo <a href="#">Apnas um link com <b>negrito</b>.</a></p>
+            <p>Paragráfo <a href="#">Apnas um link com <b>negrito</b>.</a></p>
+        </article>
+
+        <hr>
+
+        <ul>
+            <li><a href="#">Link falso</a></li>
+            <li><a href="#">Link falso</a></li>
+            <li><a href="http://serfrontend.com" target="_blank">Link externo</a></li>
+            <li><a href="http://serfrontend.com/qualquer.pdf" target="_blank">Link externo</a></li>
+            <li><a href="17_formlogin.html" title="veja exercício anterior" target="_blank">Link interno</a></li>
+        </ul>
+    </body>
+</html>

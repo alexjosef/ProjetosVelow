@@ -1,0 +1,53 @@
+<!doctype html>
+<!-- Doctype informa ao agente do usuário a versão do html que deve ser renderizada, no caso a ultima versão html existente -->
+<html>
+    <head>
+        <title>Exemplo Estrutura Básica</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Alex">
+        <meta name="description" content="estrutura básica">
+        <meta name="keywords" ccontent="html5, css, js, tecnologia, ti">
+
+        <style>
+
+            div p:nth-of-type(2) {
+                color: red;
+            }
+
+            .destaque {
+                background: #ccc;
+            }
+
+            .destaque:nth-of-type(3) {
+                color: green;
+            }
+
+            .destaque:first-child {
+                color: blue;
+            }
+
+            .destaque:last-child {
+                color: yellow;
+            }
+
+        </style>
+
+    </head>
+    <body>
+
+        <div>
+            <p class="destaque">Meu paragráfo</p>
+            <p>Meu paragráfo</p>
+            <hr>
+            <p class="destaque">Meu paragráfo</p>
+            <p>Meu paragráfo</p>
+            <hr>
+            <p class="destaque">Meu paragráfo</p>
+            <p>Meu paragráfo</p>
+            <hr>
+            <p>Meu paragráfo</p>
+            <p class="destaque">Meu paragráfo</p>
+        </div>
+
+    </body>
+</html>

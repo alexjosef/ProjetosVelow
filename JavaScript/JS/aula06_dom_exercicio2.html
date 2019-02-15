@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Curso JavaScript</title>
+    <meta charset="utf-8">
+
+    <script>
+
+            // code
+
+    </script>
+
+</head>
+
+<body>
+    <h1>Curso JavaScript completo</h1>
+
+    <div id="msg"></div>
+
+    <input id="nome" type="text" value="Informe seu nome">
+    <button onclick="MostrarNome()">Enviar</button>
+
+    <script>
+
+        function MostrarNome() {
+            var txtNome = document.querySelector('#nome');
+            var nome = txtNome.value;
+            document.querySelector('#msg').innerHTML = "Bem-vindo, <b>" + nome + "</b>";
+        }
+
+    </script>
+
+</body>
+
+</html>

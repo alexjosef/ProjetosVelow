@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Curso Javascript Completo 2018</title>
+        <meta charset="utf-8">
+        
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/bootstrap-theme.css" rel="stylesheet">
+        
+        <script src="beluga.js"></script>
+
+    </head>
+    <body>
+        <div class="container">
+            <h1>Curso Javascript Completo 2018</h1>
+        </div>
+
+        <script>
+            
+            function Pessoa(nome, sobrenome) {
+                this.nome = nome;
+                this.sobrenome = sobrenome;
+            }
+            
+            var p1 = new Pessoa('Alex', 'José');
+
+            var p2 = new Pessoa('Patrick', 'Nacimento');
+
+            var p3 = new Pessoa('Lucas', 'Lopes');
+            
+            var arr = [p1, p2, p3];
+
+            for (let i = 0; i < arr.length; i++) {
+                console.log(arr[i].nome + ' ' + arr[i].sobrenome);
+            }
+
+        </script>
+        
+    </body>
+</html>

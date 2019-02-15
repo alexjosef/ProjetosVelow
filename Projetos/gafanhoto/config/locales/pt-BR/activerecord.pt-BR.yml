@@ -1,0 +1,37 @@
+pt-BR:
+  attributes:
+    active: Ativo
+    name: Nome
+  activerecord:
+    models:
+      integration:
+        one: &integration Integração
+        other: &integrations Integrações
+      user:
+        one: &user Usuário
+        other: &users Usuários
+    attributes:
+      integration:
+        auth_key: Chave de autenticação
+      user:
+        password: Senha
+        password_confirmation: Confirmação de senha
+        reset_password_token: Token de recuperação de senha
+        reset_password_sent_at: Recuperação de senha enviada em
+        sign_in_count: Contagem de logins
+        current_sign_in_at: Login atual em
+        last_sign_in_at: Último login em
+        current_sign_in_ip: IP da sessão atual
+        last_sign_in_ip:  IP do último login
+        confirmation_token: Token de confirmação
+        confirmed_at: Confirmado em
+        confirmation_sent_at: Confirmação enviada em
+        unconfirmed_email: E-mail não confirmado
+        email: E-mail
+        tokens: Tokens
+        active: Ativo
+    errors:
+      models:
+        user:
+          attributes:
+            base:

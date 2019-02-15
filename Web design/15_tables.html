@@ -1,0 +1,90 @@
+<!doctype html>
+<!-- Doctype informa ao agente do usuário a versão do html que deve ser renderizada, no caso a ultima versão html existente -->
+<html>
+    <head>
+        <title>Exemplo Estrutura Básica</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Alex">
+        <meta name="description" content="estrutura básica">
+        <meta name="keywords" ccontent="html5, css, js, tecnologia, ti">
+
+
+        <style>
+            
+            body {
+                font-family: sans-serif;
+            }
+
+            table {
+                border-collapse: collapse;
+                margin: auto;
+                width: 30%;
+                background-color: beige;
+            }
+
+            th {
+                background-color:darkgrey;
+                border: 1px solid black;
+                padding: 10px;
+                color: white;
+                text-transform: uppercase;
+                font-size: 15px;
+                letter-spacing: 1px;
+            }
+
+            td {
+                border: 1px solid black;
+                text-align: center;
+                padding: 5px;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        
+        <table>
+            <caption>Preços dos Cursos</caption>
+
+            <thead>
+                <th>Área</th>
+                <th>Curso</th>
+                <th>Investimento</th>
+            </thead>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Valores sujeitos a alteração sem aviso prévio.</td>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <td rowspan="3">Dev</td>
+                    <td>HTML5</td>
+                    <td>R$29,90</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>R$49,90</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>R$99,90</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">Design</td>
+                    <td>PhotoShop</td>
+                    <td>R$199,90</td>
+                </tr>
+                <tr>
+                    <td>CorelDraw</td>
+                    <td>R$159,90</td>
+                </tr>
+                <tr>
+                    <td>Illustrator</td>
+                    <td>R$299,90</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </body>
+</html>
