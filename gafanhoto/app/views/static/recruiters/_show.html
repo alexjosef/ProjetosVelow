@@ -1,0 +1,22 @@
+<div layout="column" class="md-padding">
+    <form name="form">
+        <md-input-container flex class="md-block" form-input form="form" translation-base="resourceConfig.translationBase"
+            name="descripton" model="object.descripton" autocomplete="false" empty="false" permission="true" required="true"></md-input-container>
+
+        <md-input-container flex class="md-block" form-input form="form" translation-base="resourceConfig.translationBase"
+            name="street" model="object.street" autocomplete="false" empty="false" permission="true" required="true"></md-input-container>
+
+        <md-input-container flex class="md-block" form-input form="form" translation-base="resourceConfig.translationBase"
+            name="number" model="object.number" autocomplete="false" empty="false" permission="true" required="true"></md-input-container>
+        
+        <md-input-container flex class="md-block" form-input form="form" translation-base="resourceConfig.translationBase"
+            name="phone" model="object.phone" autocomplete="false" empty="false" permission="true" required="true"></md-input-container>
+    </form>
+
+    <div layout layout-align="end center">
+        <button-with-loading class="'md-primary'" on-click="save(loadingPromise, object, form)"
+            aria-label="('buttons.save' | translate)" type="submit">
+                Salvar
+        </button-with-loading>
+    </div>
+</div>

@@ -1,0 +1,30 @@
+{
+  "routes": {
+    "signUp": "cadastro",
+    "signIn": "login",
+    "dashboard": "/dashboard",
+    "user_profile": "/meu_perfil",
+    "modules": {
+      "dashboard": "/",
+      "groups": "grupos",
+      "group": "grupos/{{id}}",
+      "grasshoppers": "gafanhotos",
+      "grasshopper": "gafanhotos/{{id}}",
+      "recruiters": "recrutadores",
+      "recruiter": "recrutadores/{{id}}"
+    },
+    "config": {
+      "permission": {
+        "users": {
+          "index": "/acesso/usuarios",
+          "show": "/acesso/usuarios/{{id}}"
+        },
+        "administrators": {
+          "index": "/acesso/administradores",
+          "show": "/acesso/administradores/{{id}}"
+        }
+      },
+      "settings": "/configuracoes"
+    }
+  }
+}

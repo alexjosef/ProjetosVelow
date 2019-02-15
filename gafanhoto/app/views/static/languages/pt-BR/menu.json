@@ -1,0 +1,32 @@
+{
+  "menu": {
+    "modules": {
+      "dashboard": {
+        "label": "Dashboard"
+      },
+      "groups": {
+        "label": "Grupos"
+      },
+      "grasshoppers": {
+        "label": "Gafanhotos"
+      },
+      "recruiters": {
+        "label": "Recrutadores"
+      }
+    },
+    "config": {
+      "permission": {
+        "label": "Acesso",
+        "users.index": "Usuários",
+        "administrators": {
+          "index": "Administradores"
+        }
+      },
+      "settings": {
+        "label": "Geral"
+      }
+    },
+    "my_profile": "Meu perfil",
+    "sign_out": "Sair"
+  }
+}

@@ -1,0 +1,38 @@
+{
+    "grasshoppers": {
+        "name": {
+            "one": "Gafanhoto",
+            "other": "Gafanhotos"
+        },
+        "list": {
+            "not_found": {
+                "message": "Não existem gafanhotos cadastrados",
+                "message_filters": "Gafanhotos não encontrados",
+                "tip": "Cadastre um gafanhoto e ele aparecerá aqui.",
+                "tip_filters": "Redefina seus filtros e tente novamente."
+            }
+        },
+        "data_table": {
+            "columns": {
+                "description": "Nome",
+                "age": "Idade",
+                "group_id": "Grupo"
+            }
+        },
+        "filters": {},
+        "tabs": {
+            "general": "Dados cadastrais"
+        },
+        "params": {
+            "description": "Nome",
+            "age": "Idade",
+            "group": "Grupo"
+        },
+        "enumerations": {
+            "status": {
+                "1": "Ativos",
+                "2": "Inativos"
+            }
+        }
+    }
+}
